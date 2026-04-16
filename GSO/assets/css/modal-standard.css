@@ -1,0 +1,220 @@
+/* ===================================
+   ESTÁNDAR DE MODALES - PROYECTO GSO
+   =================================== */
+
+/* Estándar de modales basado en autorizaciones/documentos */
+
+/* Modal principal */
+.modal-content {
+    border: none;
+    box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.475rem;
+}
+
+/* Header del modal */
+.modal-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e1e3ea;
+    padding: 1.5rem 2rem;
+    border-radius: 0.475rem 0.475rem 0 0;
+}
+
+.modal-header h2,
+.modal-header h5 {
+    font-weight: 700;
+    color: #181c32;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.modal-header .btn-close,
+.modal-header .btn-icon {
+    background: transparent;
+    border: none;
+    color: #6c757d;
+    transition: color 0.2s ease;
+}
+
+.modal-header .btn-close:hover,
+.modal-header .btn-icon:hover {
+    color: #181c32;
+}
+
+/* Body del modal */
+.modal-body {
+    padding: 2rem;
+    background: #ffffff;
+}
+
+/* Cards dentro del modal */
+.modal-body .card {
+    border: 1px solid #e1e3ea;
+    border-radius: 0.475rem;
+    box-shadow: none;
+    margin-bottom: 1.5rem;
+}
+
+.modal-body .card:last-child {
+    margin-bottom: 0;
+}
+
+.modal-body .card-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e1e3ea;
+    padding: 1rem 1.5rem;
+    border-radius: 0.475rem 0.475rem 0 0;
+}
+
+.modal-body .card-header h3 {
+    font-weight: 600;
+    color: #181c32;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.modal-body .card-body {
+    padding: 1.5rem;
+}
+
+/* Labels y campos */
+.modal-body .form-label {
+    font-weight: 600;
+    color: #181c32;
+    margin-bottom: 0.5rem;
+}
+
+.modal-body .form-control,
+.modal-body .form-select {
+    border: 1px solid #e1e3ea;
+    border-radius: 0.475rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+}
+
+.modal-body .form-control:focus,
+.modal-body .form-select:focus {
+    border-color: #009ef7;
+    box-shadow: 0 0 0 0.2rem rgba(0, 158, 247, 0.25);
+    background-color: #ffffff;
+}
+
+.modal-body .form-control-plaintext {
+    color: #181c32;
+    font-weight: 500;
+    padding: 0.75rem 0;
+}
+
+/* Input groups */
+.modal-body .input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #e1e3ea;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Footer del modal */
+.modal-footer {
+    background: #ffffff;
+    border-top: 1px solid #e1e3ea;
+    padding: 1.5rem 2rem;
+    border-radius: 0 0 0.475rem 0.475rem;
+}
+
+.modal-footer .btn {
+    border-radius: 0.475rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+/* Botones estándar */
+.modal-footer .btn-light {
+    background-color: #f8f9fa;
+    border-color: #e1e3ea;
+    color: #6c757d;
+}
+
+.modal-footer .btn-light:hover {
+    background-color: #e9ecef;
+    border-color: #dde2e6;
+    color: #495057;
+}
+
+.modal-footer .btn-primary {
+    background-color: #009ef7;
+    border-color: #009ef7;
+    color: #ffffff;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #0095e8;
+    border-color: #0095e8;
+}
+
+.modal-footer .btn-success {
+    background-color: #50cd89;
+    border-color: #50cd89;
+    color: #ffffff;
+}
+
+.modal-footer .btn-success:hover {
+    background-color: #47be7d;
+    border-color: #47be7d;
+}
+
+.modal-footer .btn-danger {
+    background-color: #f1416c;
+    border-color: #f1416c;
+    color: #ffffff;
+}
+
+.modal-footer .btn-danger:hover {
+    background-color: #e11d48;
+    border-color: #e11d48;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 1rem;
+    }
+    
+    .modal-header h2,
+    .modal-header h5 {
+        font-size: 1.25rem;
+    }
+    
+    .modal-body .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Animaciones */
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* Tamaños de modal estándar */
+.modal-xl {
+    max-width: 90%;
+}
+
+.modal-lg {
+    max-width: 800px;
+}
+
+.modal-md {
+    max-width: 600px;
+}
+
+.modal-sm {
+    max-width: 400px;
+}

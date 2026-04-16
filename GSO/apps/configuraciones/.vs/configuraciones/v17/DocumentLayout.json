@@ -1,0 +1,313 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\api\\usuarioService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:users\\api\\usuarioService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\js\\usuario-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:users\\js\\usuario-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Sociedades\\js\\sociedades-grid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sociedades\\js\\sociedades-grid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\sedes\\js\\sedes-grid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sedes\\js\\sedes-grid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\sedes\\js\\sedes-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sedes\\js\\sedes-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\js\\roles-grid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Roles\\js\\roles-grid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\permissions\\js\\permissions-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:permissions\\js\\permissions-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\helper\\helper.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:helper\\helper.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\autorizaciones\\js\\autorizaciones-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:autorizaciones\\js\\autorizaciones-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\js\\roles-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Roles\\js\\roles-crear.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\RolAccessAction\\js\\rolAccessActionService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RolAccessAction\\js\\rolAccessActionService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\api\\rolXAccessService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Roles\\api\\rolXAccessService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\configuracion_general\\api\\AccionesService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:configuracion_general\\api\\AccionesService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\configuracion_general\\api\\AccesoService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:configuracion_general\\api\\AccesoService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\api\\rolService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Roles\\api\\rolService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Accessos\\api\\AccesoXactionService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Accessos\\api\\AccesoXactionService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\api\\usuarioRolService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:users\\api\\usuarioRolService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1407904778:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1139089979:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "usuarioService.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\api\\usuarioService.js",
+              "RelativeDocumentMoniker": "users\\api\\usuarioService.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\api\\usuarioService.js",
+              "RelativeToolTip": "users\\api\\usuarioService.js",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:27:44.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "usuario-crear.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\js\\usuario-crear.js",
+              "RelativeDocumentMoniker": "users\\js\\usuario-crear.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\js\\usuario-crear.js",
+              "RelativeToolTip": "users\\js\\usuario-crear.js",
+              "ViewState": "AgIAAKsCAAAAAAAAAAAowLUCAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:26:26.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sociedades-grid.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Sociedades\\js\\sociedades-grid.js",
+              "RelativeDocumentMoniker": "Sociedades\\js\\sociedades-grid.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Sociedades\\js\\sociedades-grid.js",
+              "RelativeToolTip": "Sociedades\\js\\sociedades-grid.js",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAgwLAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:26:17.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sedes-grid.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\sedes\\js\\sedes-grid.js",
+              "RelativeDocumentMoniker": "sedes\\js\\sedes-grid.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\sedes\\js\\sedes-grid.js",
+              "RelativeToolTip": "sedes\\js\\sedes-grid.js",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAgwLgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:26:07.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "sedes-crear.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\sedes\\js\\sedes-crear.js",
+              "RelativeDocumentMoniker": "sedes\\js\\sedes-crear.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\sedes\\js\\sedes-crear.js",
+              "RelativeToolTip": "sedes\\js\\sedes-crear.js",
+              "ViewState": "AgIAAHcBAAAAAAAAAAAowIsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:25:54.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "roles-grid.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\js\\roles-grid.js",
+              "RelativeDocumentMoniker": "Roles\\js\\roles-grid.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\js\\roles-grid.js",
+              "RelativeToolTip": "Roles\\js\\roles-grid.js",
+              "ViewState": "AgIAAKgAAAAAAAAAAAArwLsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:25:46.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "permissions-crear.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\permissions\\js\\permissions-crear.js",
+              "RelativeDocumentMoniker": "permissions\\js\\permissions-crear.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\permissions\\js\\permissions-crear.js",
+              "RelativeToolTip": "permissions\\js\\permissions-crear.js",
+              "ViewState": "AgIAAM4AAAAAAAAAAADgv+kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:25:24.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "helper.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\helper\\helper.js",
+              "RelativeDocumentMoniker": "helper\\helper.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\helper\\helper.js",
+              "RelativeToolTip": "helper\\helper.js",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:25:19.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "autorizaciones-crear.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\autorizaciones\\js\\autorizaciones-crear.js",
+              "RelativeDocumentMoniker": "autorizaciones\\js\\autorizaciones-crear.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\autorizaciones\\js\\autorizaciones-crear.js",
+              "RelativeToolTip": "autorizaciones\\js\\autorizaciones-crear.js",
+              "ViewState": "AgIAABwBAAAAAAAAAADgvzABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T19:24:59.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "roles-crear.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\js\\roles-crear.js",
+              "RelativeDocumentMoniker": "Roles\\js\\roles-crear.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\js\\roles-crear.js",
+              "RelativeToolTip": "Roles\\js\\roles-crear.js",
+              "ViewState": "AgIAAAsBAAAAAAAAAADgvycBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-14T17:12:45.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "usuarioRolService.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\api\\usuarioRolService.js",
+              "RelativeDocumentMoniker": "users\\api\\usuarioRolService.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\users\\api\\usuarioRolService.js",
+              "RelativeToolTip": "users\\api\\usuarioRolService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T14:59:07.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "rolAccessActionService.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\RolAccessAction\\js\\rolAccessActionService.js",
+              "RelativeDocumentMoniker": "RolAccessAction\\js\\rolAccessActionService.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\RolAccessAction\\js\\rolAccessActionService.js",
+              "RelativeToolTip": "RolAccessAction\\js\\rolAccessActionService.js",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T14:57:53.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "rolXAccessService.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\api\\rolXAccessService.js",
+              "RelativeDocumentMoniker": "Roles\\api\\rolXAccessService.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\api\\rolXAccessService.js",
+              "RelativeToolTip": "Roles\\api\\rolXAccessService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T14:57:42.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "rolService.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\api\\rolService.js",
+              "RelativeDocumentMoniker": "Roles\\api\\rolService.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Roles\\api\\rolService.js",
+              "RelativeToolTip": "Roles\\api\\rolService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T14:57:33.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccionesService.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\configuracion_general\\api\\AccionesService.js",
+              "RelativeDocumentMoniker": "configuracion_general\\api\\AccionesService.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\configuracion_general\\api\\AccionesService.js",
+              "RelativeToolTip": "configuracion_general\\api\\AccionesService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T14:57:06.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccesoXactionService.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Accessos\\api\\AccesoXactionService.js",
+              "RelativeDocumentMoniker": "Accessos\\api\\AccesoXactionService.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\Accessos\\api\\AccesoXactionService.js",
+              "RelativeToolTip": "Accessos\\api\\AccesoXactionService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T14:58:25.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccesoService.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\configuracion_general\\api\\AccesoService.js",
+              "RelativeDocumentMoniker": "configuracion_general\\api\\AccesoService.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Corporativo\\GSO\\apps\\configuraciones\\configuracion_general\\api\\AccesoService.js",
+              "RelativeToolTip": "configuracion_general\\api\\AccesoService.js",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T14:57:05.385Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

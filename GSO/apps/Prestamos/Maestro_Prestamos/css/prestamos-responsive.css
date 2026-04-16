@@ -1,0 +1,174 @@
+/* ===================================
+   MÓDULO DE PRÉSTAMOS - CSS RESPONSIVE
+   =================================== */
+
+/* Asegurar que el contenedor principal use toda la altura disponible */
+#kt_app_content {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+#kt_app_content_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+}
+
+/* Card responsive */
+.card.h-100 {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+/* Card body que crece */
+.card-body.flex-grow-1 {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Grid container responsive */
+#prestamosGrid {
+    flex: 1;
+    min-height: 0;
+}
+
+/* ===================================
+   MEDIA QUERIES PARA PANTALLAS GRANDES
+   =================================== */
+
+/* Expandir contenido en pantallas grandes */
+@media (min-width: 1400px) {
+    #kt_app_content_container {
+        max-width: 95% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    #kt_app_content_container {
+        max-width: 98% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1920px) {
+    #kt_app_content_container {
+        max-width: 100% !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* ===================================
+   MEDIA QUERIES PARA PANTALLAS PEQUEÑAS
+   =================================== */
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    #kt_app_content {
+        height: calc(100vh - 80px);
+    }
+    
+    .card-header {
+        padding: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .card-title .w-250px {
+        width: 200px !important;
+    }
+    
+    .card-toolbar .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* ===================================
+   ESTILOS ADICIONALES PARA SYNCFUSION GRID
+   =================================== */
+
+/* Asegurar que el grid de Syncfusion sea responsive */
+.e-grid {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* Ajustes para el toolbar en pantallas pequeñas */
+@media (max-width: 768px) {
+    .e-toolbar {
+        flex-wrap: wrap;
+    }
+    
+    .e-toolbar .e-tbar-btn {
+        margin: 2px;
+    }
+}
+
+/* Ajustes para la paginación en pantallas pequeñas */
+@media (max-width: 576px) {
+    .e-pager {
+        font-size: 0.875rem;
+    }
+    
+    .e-pager .e-pagercontainer {
+        flex-wrap: wrap;
+    }
+}
+
+/* ===================================
+   ESTILOS PARA BÚSQUEDA EN TIEMPO REAL
+   =================================== */
+
+/* Input de búsqueda */
+#prestamoSearch {
+    transition: all 0.3s ease;
+}
+
+#prestamoSearch:focus {
+    border-color: #009ef7;
+    box-shadow: 0 0 0 0.2rem rgba(0, 158, 247, 0.25);
+}
+
+/* Indicador de búsqueda */
+#prestamoSearch.searching {
+    border-color: #ffc700;
+    background-color: #fff8e1;
+}
+
+/* Animación para el indicador de búsqueda */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#prestamoSearch.searching {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+/* Placeholder mejorado */
+#prestamoSearch::placeholder {
+    color: #6c757d;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+#prestamoSearch:focus::placeholder {
+    opacity: 0.5;
+}

@@ -1,0 +1,6 @@
+.report-card:hover {
+    cursor: pointer;
+    border-color: #1B84FF !important;
+    background-color: #f1faff !important;
+    transition: all 0.3s ease;
+}

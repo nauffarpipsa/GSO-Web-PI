@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Accessos",
+    "\\Accessos\\api",
+    "\\configuracion_general",
+    "\\configuracion_general\\api",
+    "\\RolAccessAction",
+    "\\RolAccessAction\\js",
+    "\\Roles",
+    "\\Roles\\api",
+    "\\users",
+    "\\users\\api"
+  ],
+  "SelectedNode": "\\users\\api\\usuarioRolService.js",
+  "PreviewInSolutionExplorer": false
+}

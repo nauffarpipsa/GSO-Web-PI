@@ -1,0 +1,546 @@
+/**
+ * Estilos específicos para el módulo Maestro de Préstamos
+ * Versión: 1.0.0
+ * 
+ * Este archivo contiene todos los estilos específicos del módulo
+ */
+
+/* ========================================
+   ESTILOS DEL GRID PRINCIPAL
+   ======================================== */
+
+/* Contenedor del grid */
+#prestamosGrid {
+    min-height: 400px;
+    flex-grow: 1;
+}
+
+/* ========================================
+   ESTILOS DEL MODAL DE MODIFICACIÓN RÁPIDA
+   ======================================== */
+
+/* Modal principal */
+#modalModificacionRapida .modal-dialog {
+    max-width: 900px;
+}
+
+/* Asegurar que no haya espacios en blanco */
+#modalModificacionRapida {
+    background-color: transparent;
+}
+
+#modalModificacionRapida .modal-content {
+    background-color: #ffffff;
+    min-height: 100%;
+}
+
+#modalModificacionRapida .modal-content {
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Header del modal */
+#modalModificacionRapida .modal-header {
+    background: #f8f9fa;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#modalModificacionRapida .modal-header h2 {
+    margin: 0;
+    font-weight: 600;
+    color: #495057;
+}
+
+#modalModificacionRapida .btn-close {
+    color: #6c757d;
+}
+
+/* Body del modal */
+#modalModificacionRapida .modal-body {
+    padding: 1.5rem;
+}
+
+#modalModificacionRapida .card {
+    border: 1px solid #e9ecef;
+    box-shadow: none;
+    border-radius: 6px;
+}
+
+#modalModificacionRapida .card-header {
+    background: #f8f9fa;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+}
+
+#modalModificacionRapida .card-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+/* Campos del formulario */
+#modalModificacionRapida .form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+#modalModificacionRapida .form-control,
+#modalModificacionRapida .form-select {
+    border-radius: 6px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+#modalModificacionRapida .form-control:focus,
+#modalModificacionRapida .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+#modalModificacionRapida .form-control:read-only {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+/* Input groups */
+#modalModificacionRapida .input-group-text {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+    font-weight: 500;
+}
+
+/* Footer del modal */
+#modalModificacionRapida .modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+    background-color: #ffffff;
+}
+
+/* Botones del modal */
+#modalModificacionRapida .btn {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+#modalModificacionRapida .btn-primary {
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
+}
+
+#modalModificacionRapida .btn-primary:hover {
+    background: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+#modalModificacionRapida .btn-light {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #6c757d;
+}
+
+#modalModificacionRapida .btn-light:hover {
+    background: #e9ecef;
+    border-color: #c1c9d0;
+    color: #495057;
+}
+
+/* ========================================
+   ESTILOS RESPONSIVOS
+   ======================================== */
+
+@media (max-width: 768px) {
+    #modalModificacionRapida .modal-dialog {
+        margin: 1rem;
+        max-width: calc(100% - 2rem);
+    }
+    
+    #modalModificacionRapida .modal-body {
+        padding: 1rem;
+    }
+    
+    #modalModificacionRapida .row > div {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #modalModificacionRapida .modal-header h2 {
+        font-size: 1.25rem;
+    }
+    
+    #modalModificacionRapida .card-header {
+        padding: 0.75rem 1rem;
+    }
+    
+    #modalModificacionRapida .card-title {
+        font-size: 1rem;
+    }
+}
+
+/* ========================================
+   ESTILOS DE ANIMACIONES
+   ======================================== */
+
+#modalModificacionRapida .modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -50px);
+}
+
+#modalModificacionRapida .modal.show .modal-dialog {
+    transform: none;
+}
+
+/* Transiciones suaves para cambios de tema */
+#modalModificacionRapida .modal-content,
+#modalModificacionRapida .modal-header,
+#modalModificacionRapida .modal-footer,
+#modalModificacionRapida .card,
+#modalModificacionRapida .card-header,
+#modalModificacionRapida .form-control,
+#modalModificacionRapida .form-select,
+#modalModificacionRapida .input-group-text,
+#modalModificacionRapida .btn {
+    transition: all 0.3s ease;
+}
+
+/* ========================================
+   ESTILOS DE ESTADOS
+   ======================================== */
+
+/* Campos requeridos */
+#modalModificacionRapida .form-control:required,
+#modalModificacionRapida .form-select:required {
+    border-left: 2px solid #dc3545;
+}
+
+#modalModificacionRapida .form-control:required:valid,
+#modalModificacionRapida .form-select:required:valid {
+    border-left-color: #198754;
+}
+
+/* Campos de solo lectura */
+#modalModificacionRapida .form-control[readonly] {
+    background-color: #e9ecef;
+    color: #495057;
+    cursor: not-allowed;
+}
+
+/* ========================================
+   ESTILOS DE VALIDACIÓN
+   ======================================== */
+
+#modalModificacionRapida .form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+#modalModificacionRapida .form-control.is-valid {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+/* ========================================
+   ESTILOS DE ACCESIBILIDAD
+   ======================================== */
+
+/* Focus visible para navegación por teclado */
+#modalModificacionRapida .form-control:focus,
+#modalModificacionRapida .form-select:focus,
+#modalModificacionRapida .btn:focus {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}
+
+/* ========================================
+   ADAPTACIÓN AL MODO OSCURO
+   ======================================== */
+
+/* Modo oscuro - detecta el tema de KeenTheme */
+[data-bs-theme="dark"] #modalModificacionRapida .modal-content,
+[data-kt-app-theme="dark"] #modalModificacionRapida .modal-content {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-color: #404040;
+    min-height: 100%;
+}
+
+/* Asegurar que todo el modal esté cubierto en modo oscuro */
+[data-bs-theme="dark"] #modalModificacionRapida,
+[data-kt-app-theme="dark"] #modalModificacionRapida {
+    background-color: #1a1a1a;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .modal-header,
+[data-kt-app-theme="dark"] #modalModificacionRapida .modal-header {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border-bottom-color: #404040;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .modal-header h2,
+[data-kt-app-theme="dark"] #modalModificacionRapida .modal-header h2 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .btn-close,
+[data-kt-app-theme="dark"] #modalModificacionRapida .btn-close {
+    color: #ffffff;
+    filter: brightness(0) invert(1);
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .card,
+[data-kt-app-theme="dark"] #modalModificacionRapida .card {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .card-header,
+[data-kt-app-theme="dark"] #modalModificacionRapida .card-header {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-bottom-color: #404040;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .card-title,
+[data-kt-app-theme="dark"] #modalModificacionRapida .card-title {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .form-label,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-label {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .form-control,
+[data-bs-theme="dark"] #modalModificacionRapida .form-select,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-control,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-select {
+    background-color: #3a3a3a;
+    border-color: #404040;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .form-control:focus,
+[data-bs-theme="dark"] #modalModificacionRapida .form-select:focus,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-control:focus,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-select:focus {
+    border-color: #86b7fe;
+    background-color: #3a3a3a;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .form-control:read-only,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-control:read-only {
+    background-color: #404040;
+    color: #cccccc;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .input-group-text,
+[data-kt-app-theme="dark"] #modalModificacionRapida .input-group-text {
+    background-color: #404040;
+    border-color: #404040;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .modal-footer,
+[data-kt-app-theme="dark"] #modalModificacionRapida .modal-footer {
+    background-color: #2d2d2d;
+    border-top-color: #404040;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .btn-light,
+[data-kt-app-theme="dark"] #modalModificacionRapida .btn-light {
+    background-color: #404040;
+    border-color: #404040;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .btn-light:hover,
+[data-kt-app-theme="dark"] #modalModificacionRapida .btn-light:hover {
+    background-color: #505050;
+    border-color: #505050;
+}
+
+/* Estilos adicionales para completar el modo oscuro */
+[data-bs-theme="dark"] #modalModificacionRapida .modal-body,
+[data-kt-app-theme="dark"] #modalModificacionRapida .modal-body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .card-body,
+[data-kt-app-theme="dark"] #modalModificacionRapida .card-body {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .form-control:focus,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-select:focus {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .form-control:read-only,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-control:read-only {
+    background-color: #404040;
+    color: #cccccc;
+    border-color: #404040;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .input-group-text,
+[data-kt-app-theme="dark"] #modalModificacionRapida .input-group-text {
+    background-color: #404040;
+    border-color: #404040;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .btn-primary,
+[data-kt-app-theme="dark"] #modalModificacionRapida .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .btn-primary:hover,
+[data-kt-app-theme="dark"] #modalModificacionRapida .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .btn-light,
+[data-kt-app-theme="dark"] #modalModificacionRapida .btn-light {
+    background-color: #404040;
+    border-color: #404040;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida .btn-light:hover,
+[data-kt-app-theme="dark"] #modalModificacionRapida .btn-light:hover {
+    background-color: #505050;
+    border-color: #505050;
+}
+
+/* Estilos para elementos de texto y etiquetas */
+[data-bs-theme="dark"] #modalModificacionRapida .form-text,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-text {
+    color: #cccccc;
+}
+
+[data-bs-theme="dark"] #modalModificacionRapida small,
+[data-kt-app-theme="dark"] #modalModificacionRapida small {
+    color: #cccccc;
+}
+
+/* Estilos para placeholders */
+[data-bs-theme="dark"] #modalModificacionRapida .form-control::placeholder,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-control::placeholder {
+    color: #999999;
+}
+
+/* Estilos para textarea */
+[data-bs-theme="dark"] #modalModificacionRapida textarea.form-control,
+[data-kt-app-theme="dark"] #modalModificacionRapida textarea.form-control {
+    background-color: #3a3a3a;
+    border-color: #404040;
+    color: #ffffff;
+    resize: vertical;
+}
+
+/* Estilos para select con opciones */
+[data-bs-theme="dark"] #modalModificacionRapida .form-select option,
+[data-kt-app-theme="dark"] #modalModificacionRapida .form-select option {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+/* Estilos para el backdrop del modal */
+[data-bs-theme="dark"] #modalModificacionRapida.modal-backdrop,
+[data-kt-app-theme="dark"] #modalModificacionRapida.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fallback para navegadores que no soportan data attributes */
+@media (prefers-color-scheme: dark) {
+    #modalModificacionRapida {
+        background-color: #1a1a1a;
+    }
+    
+    #modalModificacionRapida .modal-content {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        border-color: #404040;
+        min-height: 100%;
+    }
+    
+    #modalModificacionRapida .modal-header {
+        background-color: #2d2d2d;
+        color: #ffffff;
+        border-bottom-color: #404040;
+    }
+    
+    #modalModificacionRapida .modal-body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    #modalModificacionRapida .modal-footer {
+        background-color: #2d2d2d;
+        border-top-color: #404040;
+    }
+    
+    #modalModificacionRapida .card {
+        background-color: #2d2d2d;
+        border-color: #404040;
+    }
+    
+    #modalModificacionRapida .card-header {
+        background-color: #3a3a3a;
+        color: #ffffff;
+        border-bottom-color: #404040;
+    }
+    
+    #modalModificacionRapida .card-body {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+    
+    #modalModificacionRapida .form-control,
+    #modalModificacionRapida .form-select {
+        background-color: #3a3a3a;
+        border-color: #404040;
+        color: #ffffff;
+    }
+    
+    #modalModificacionRapida .form-control:read-only {
+        background-color: #404040;
+        color: #cccccc;
+        border-color: #404040;
+    }
+    
+    #modalModificacionRapida .input-group-text {
+        background-color: #404040;
+        border-color: #404040;
+        color: #ffffff;
+    }
+    
+    #modalModificacionRapida .form-label {
+        color: #ffffff;
+    }
+    
+    #modalModificacionRapida .form-text,
+    #modalModificacionRapida small {
+        color: #cccccc;
+    }
+    
+    #modalModificacionRapida .btn-light {
+        background-color: #404040;
+        border-color: #404040;
+        color: #ffffff;
+    }
+}

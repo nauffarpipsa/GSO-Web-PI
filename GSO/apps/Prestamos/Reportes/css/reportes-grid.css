@@ -1,0 +1,14 @@
+/**
+ * Estilos del grid solo para páginas de Reportes - Préstamos
+ * Solo ajustes mínimos; el diseño (encabezado, filas) lo define el tema Tailwind3 del grid.
+ */
+.reporte-saldos-grid-container .e-grid,
+.reporte-pagos-grid-container .e-grid,
+.reporte-lineas-grid-container .e-grid,
+.reporte-capital-interes-grid-container .e-grid,
+.reporte-cuota-mes-grid-container .e-grid,
+.reporte-prestamos-atrasados-grid-container .e-grid,
+.reporte-facturas-pendientes-grid-container .e-grid,
+.reporte-interes-no-provisionado-grid-container .e-grid {
+    font-family: 'Inter', sans-serif;
+}

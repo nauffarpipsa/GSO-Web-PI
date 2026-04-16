@@ -1,0 +1,559 @@
+/**
+ * Estilos específicos para el módulo Configuración General
+ * Versión: 1.0.0
+ * 
+ * Este archivo contiene todos los estilos específicos del módulo
+ */
+
+/* ========================================
+   ESTILOS DE LAS TABLAS DE CONFIGURACIÓN
+   ======================================== */
+
+/* Contenedores de las tablas */
+.config-table-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    margin-bottom: 2rem;
+}
+
+.config-table-container h3 {
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #667eea;
+}
+
+/* ========================================
+   ESTILOS DE LOS BOTONES DE ACCIÓN
+   ======================================== */
+
+/* Botón Agregar */
+.btn-agregar {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(40, 167, 69, 0.3);
+}
+
+.btn-agregar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(40, 167, 69, 0.4);
+    background: linear-gradient(135deg, #218838 0%, #1ea085 100%);
+}
+
+.btn-agregar:active {
+    transform: translateY(0);
+}
+
+/* Botón Editar */
+.btn-editar {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.btn-editar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3);
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+}
+
+/* ========================================
+   ESTILOS DE LOS MODALES DE CONFIGURACIÓN
+   ======================================== */
+
+/* Modal principal */
+.modal-configuracion .modal-dialog {
+    max-width: 600px;
+}
+
+.modal-configuracion .modal-content {
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border: none;
+}
+
+/* Header del modal */
+.modal-configuracion .modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px 12px 0 0;
+    border-bottom: none;
+    padding: 1.5rem;
+}
+
+.modal-configuracion .modal-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.modal-configuracion .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+.modal-configuracion .btn-close:hover {
+    opacity: 1;
+}
+
+/* Body del modal */
+.modal-configuracion .modal-body {
+    padding: 2rem;
+}
+
+/* Campos del formulario */
+.modal-configuracion .form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.75rem;
+}
+
+.modal-configuracion .form-control,
+.modal-configuracion .form-select {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.modal-configuracion .form-control:focus,
+.modal-configuracion .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    transform: translateY(-1px);
+}
+
+/* Footer del modal */
+.modal-configuracion .modal-footer {
+    border-top: none;
+    padding: 1.5rem 2rem;
+    background-color: #f8f9fa;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Botones del modal */
+.modal-configuracion .btn {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.modal-configuracion .btn-secondary {
+    background: #6c757d;
+    border: none;
+    color: white;
+}
+
+.modal-configuracion .btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3);
+}
+
+.modal-configuracion .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.modal-configuracion .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* ========================================
+   ESTILOS DE VALIDACIÓN
+   ======================================== */
+
+/* Campos requeridos */
+.modal-configuracion .form-control:required,
+.modal-configuracion .form-select:required {
+    border-left: 4px solid #dc3545;
+}
+
+.modal-configuracion .form-control:required:valid,
+.modal-configuracion .form-select:required:valid {
+    border-left-color: #28a745;
+}
+
+/* Campos inválidos */
+.modal-configuracion .form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.modal-configuracion .form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* ========================================
+   ESTILOS DE NOTIFICACIONES
+   ======================================== */
+
+/* Modal de notificación */
+#modalNotificacion .modal-content {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#modalNotificacion .modal-header {
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+#modalNotificacion .modal-footer {
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+}
+
+#modalNotificacion .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+#modalNotificacion .modal-body {
+    padding: 2rem 1.5rem;
+}
+
+#modalNotificacionIcon i {
+    font-size: 4rem !important;
+}
+
+#modalNotificacionMensaje {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Estilos para botones deshabilitados durante procesamiento */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Animación de carga para botones */
+.btn:disabled .spinner-border-sm {
+    animation: spinner-border 0.75s linear infinite;
+}
+
+/* ========================================
+   ESTILOS DEL MODAL DE NOTIFICACIÓN
+   ======================================== */
+
+#modalNotificacion .modal-content {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#modalNotificacion .modal-header {
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+#modalNotificacion .modal-footer {
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+}
+
+#modalNotificacion .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+#modalNotificacion .modal-body {
+    padding: 2rem 1.5rem;
+}
+
+#modalNotificacionIcon i {
+    font-size: 4rem !important;
+}
+
+#modalNotificacionMensaje {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* ========================================
+   ESTILOS PARA BOTONES DESHABILITADOS
+   ======================================== */
+
+/* Estilos para botones deshabilitados durante procesamiento */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* ========================================
+   ESTILOS RESPONSIVOS
+   ======================================== */
+
+@media (max-width: 1200px) {
+    .config-table-container {
+        padding: 1rem;
+    }
+    
+    .config-table-container h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-configuracion .modal-dialog {
+        margin: 1rem;
+        max-width: calc(100% - 2rem);
+    }
+    
+    .modal-configuracion .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .modal-configuracion .modal-footer {
+        padding: 1rem 1.5rem;
+    }
+    
+    .btn-agregar {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .config-table-container {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .config-table-container h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .modal-configuracion .modal-header {
+        padding: 1rem;
+    }
+    
+    .modal-configuracion .modal-title {
+        font-size: 1.1rem;
+    }
+    
+    .modal-configuracion .modal-body {
+        padding: 1rem;
+    }
+    
+    .modal-configuracion .btn {
+        padding: 0.5rem 1rem;
+        min-width: 80px;
+        font-size: 0.875rem;
+    }
+}
+
+/* ========================================
+   ESTILOS DE ANIMACIONES
+   ======================================== */
+
+/* Animación de entrada para las tablas */
+.config-table-container {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effects para contenedores */
+.config-table-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+/* ========================================
+   ESTILOS DE ACCESIBILIDAD
+   ======================================== */
+
+/* Focus visible para navegación por teclado */
+.modal-configuracion .form-control:focus,
+.modal-configuracion .form-select:focus,
+.modal-configuracion .btn:focus,
+.btn-agregar:focus,
+.btn-editar:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Alto contraste para modo oscuro */
+@media (prefers-color-scheme: dark) {
+    .config-table-container {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        border-color: #404040;
+    }
+    
+    .modal-configuracion .modal-content {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    .modal-configuracion .form-control,
+    .modal-configuracion .form-select {
+        background-color: #2d2d2d;
+        border-color: #404040;
+        color: #ffffff;
+    }
+    
+    .modal-configuracion .modal-footer {
+        background-color: #2d2d2d;
+    }
+}
+
+/* ========================================
+   ESTILOS ESPECÍFICOS PARA COMBOS
+   ======================================== */
+
+/* Combobox de bancos en línea de crédito */
+#bancoSelect {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+#bancoSelect:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* ========================================
+   ESTILOS DE ESTADOS ESPECIALES
+   ======================================== */
+
+/* Estado de carga */
+.loading-state {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading-state::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #667eea;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estado de error */
+.error-state {
+    border-color: #dc3545 !important;
+    background-color: #fff5f5;
+}
+
+.error-state:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+}
+
+/* ========================================
+   ESTILOS PARA BADGES DE SYNCFUSION
+   ======================================== */
+
+/* Badges de estado para Syncfusion */
+.e-status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.e-status-activo {
+    background-color: #e8f5e8;
+    color: #1e7e34;
+    border: 1px solid #c3e6cb;
+}
+
+.e-status-inactivo {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ========================================
+   ESTILOS PARA BOTONES DE SYNCFUSION
+   ======================================== */
+
+/* Botones de acciones para Syncfusion */
+.e-btn.e-flat.e-primary.e-small {
+    background-color: #009ef7;
+    border-color: #009ef7;
+    color: #ffffff;
+}
+
+.e-btn.e-flat.e-primary.e-small:hover {
+    background-color: #0095e8;
+    border-color: #0095e8;
+}
+
+.e-btn.e-flat.e-danger.e-small {
+    background-color: #f1416c;
+    border-color: #f1416c;
+    color: #ffffff;
+}
+
+.e-btn.e-flat.e-danger.e-small:hover {
+    background-color: #e11d48;
+    border-color: #e11d48;
+}
+
+/* ========================================
+   ESTILOS DE ANIMACIÓN
+   ======================================== */
+
+/* Animación de carga para botones */
+.btn:disabled .spinner-border-sm {
+    animation: spinner-border 0.75s linear infinite;
+}

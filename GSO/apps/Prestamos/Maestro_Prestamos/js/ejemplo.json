@@ -1,0 +1,83 @@
+{ // Primer Endpoint: api/Invoice/CreateInvoice
+ "businessTransactionDocumentTypeCode": "004", //Se deja quemado
+ "mediumName": "LOAN 0062", //id del prestamo
+ "date": "2025-09-18T00:00:00.000Z", //fecha del dia de pago
+ "receiptDate": "2025-09-18T00:00:00.000Z", //fecha del dia de pago
+ "transactionDate": "2025-09-18T00:00:00.000Z", //fecha del dia de pago
+ "invoicingPeriodStart": "2025-08-18T00:00:00.000Z", //fecha del dia de pago // opcionales 
+ "invoicingPeriodEnd": "2028-07-18T00:00:00.000Z", //fecha del dia de pago // opcionales
+ "documentItemGrossAmountIndicator": false, // se deja quemado
+ "grossAmount": 8320.00, //Total del input de intereses
+ "currencyCode": "HNL", //Dejarlo quemado de momento
+ "customerInvoiceId": "LOAN 0062", // id del prestamo
+ "sellerPartyId": "1000000", //Codigo de proveedor
+ "buyerPartyId": "1000000", //company_id
+ "responsibleEmployeeId": "1236", // se deja quemado
+ "categorizacion": "103", //lo dejamos quemado de momento
+ "items": [
+ {
+ "itemDescription": "LOAN 0062", // misma informacion de mediumname
+ "itemNetUnitPrice": 8320.00, // mismo monto de grossAmount
+ "quantity": 1, // dejamos quemado de momento
+ "costCentreId": "1014100", //dejamos quemado de momento
+ "productTaxCode": "1", //dejamos quemado de momento
+ "generalLedgerAccountAliasCode": "Z106" //dejamos quemado de momento
+ }
+ ]
+}
+
+//Respuesta Exitosa:
+{
+    "statusResult": true,
+    "dataRecords": 0,
+    "dataResult": "FP10-6381-2025",
+    "messageResult": "¡El registro se ha creado exitosamente!"
+   }
+   
+   Pago
+   { // segundo Endpoint: api/Payment/CreatePayment
+     "PaymentID": "201025-124-K", // id de prestamo + cuota + numero de pago
+    "Company": "1000000", //company_id
+    "PaymentDate": "2025-09-29", //fecha del dia de pago
+    "PostingDate": "2025-09-29", //fecha del dia de pago
+    "Description": "Pago Prestamo NoPrestamo / NO01", //descripcion del pago (se agrega en el input del modal)
+    "PaymenMethod": "Domiciliación bancaria", // se deja quemado
+    "Amount": 8320.00, // total del interes mas capital
+    "CurrencyCode": "HNL", //dejarlo quemado de momento
+    "PayerID": "5000001", //c_proveedor de la respuesta de la api de prestamos
+    "PayerBankCode": "28", //valor del input codigo de banco proveedor
+    "PayerAccountID": "750099999506", //valor del input numero de cuenta proveedor
+    "ReceiverBankID": "200009748748_FICOHSA_HNL", //valor del input id de banco receptor (sap_bank_id de la respuesta de la api de prestamos)
+    "ReceiverBankName": "Banco Ficohsa", //valor del input nombre de banco proveedor
+    "ExternalReferencee": "201025-124-K", //valor del input id de prestamo + cuota + numero de pago
+    "Items": [
+    {
+    "DocumentID": "FP10-6381-2025", //valor del input id de factura
+    "AmountToPay": 8320.00, //valor del input total del capital
+    "DocumentID": "FP10-6382-2025", //valor de la respuesta de la api de intereses (dataResult)
+    "AmountToPay": 8320.00, //valor del input total del interes
+    }
+    ]
+   }
+   
+   respuesta exitosa:
+   {
+    "statusResult": true,
+    "dataRecords": 0,
+    "dataResult": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soapenv:Envelope xmlns:gl
+    ob=\"http://sap.com/xi/SAPGlobal20/Global\" xmlns:soapenv=\"http://schemas.xmlsoap.org/so
+    ap/envelope/\">\r\n <soapenv:Header />\r\n <soapenv:Body>\r\n <glob:Z_PagoProveedore
+    sCreateRequest_sync>\r\n <Z_PagoProveedores>\r\n <PaymentID>201025-124-K</Pay
+    mentID>\r\n <Company>1000000</Company>\r\n <PaymentDate>2025-09-29</Payment
+    Date>\r\n <PostingDate>2025-09-29</PostingDate>\r\n <Description>Pago Prest
+    amo NoPrestamo / NO01</Description>\r\n <PaymenMethod>Domiciliación bancaria</Paym
+    enMethod>\r\n <Amount currencyCode=\"HNL\">8320.00</Amount>\r\n <Currrency>
+    HNL</Currrency>\r\n <PayerID>5000001</PayerID>\r\n <PayerBankCode>28</Payer
+    BankCode>\r\n <PayerAccountID>750099999506</PayerAccountID>\r\n <ReceiverBa
+    nkID>200009748748_FICOHSA_HNL</ReceiverBankID>\r\n <ReceiverBankName>Banco Ficohsa
+    </ReceiverBankName>\r\n <ExternalReferencee>201025-124-K</ExternalReferencee>\r\n 
+    <items>\r\n <DocumentID>FP10-6381-2025</DocumentID>\r\n <AmountToPay cu
+    rrencyCode=\"HNL\">8320.00</AmountToPay>\r\n </items>\r\n </Z_PagoProveedores
+    >\r\n </glob:Z_PagoProveedoresCreateRequest_sync>\r\n </soapenv:Body>\r\n</soapenv:En
+    velope>",
+    "messageResult": "¡La solicitud ha tenido éxito!"

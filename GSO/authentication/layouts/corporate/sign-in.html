@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<!--begin::Head-->
+
+<head>
+	<base href="../../../" />
+	<title>Pipsa</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:locale" content="en_US" />
+	<link rel="canonical" href="http://preview.keenthemes.comauthentication/layouts/corporate/sign-in.html" />
+	<link rel="shortcut icon" href="assets/media/logos/ico.ico" />
+	<!--begin::Fonts(mandatory for all pages)-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+	<!--end::Fonts-->
+	<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<!--end::Global Stylesheets Bundle-->
+	<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+	<style>
+		@media (max-width: 991.98px) {
+			.bgi-size-cover.bgi-position-center {
+				display: none !important;
+			}
+			
+			.mobile-logo-container {
+				margin: 0 auto;
+				max-width: 300px;
+				width: 100%;
+			}
+		}
+
+		/* Estilos base para el contenedor de la imagen */
+		.company-container {
+			position: relative;
+			height: 100vh;
+			overflow: hidden;
+			width: 100%;
+		}
+
+		.company-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			transition: transform 0.6s ease-in-out;
+		}
+
+		.company-image.pipsa {
+			background-image: url(assets/media/misc/Pipsa.jpg);
+		}
+
+		/* Versión móvil */
+		.mobile-company-container {
+			position: relative;
+			height: 120px;
+			overflow: hidden;
+			margin: 0 auto;
+			max-width: 300px;
+		}
+
+		.mobile-company-image {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			transition: transform 0.6s ease-in-out;
+		}
+
+		.mobile-company-image.pipsa {
+			background-image: url(assets/media/misc/Pipsa.jpg);
+		}
+
+		@media (max-width: 991.98px) {
+			.company-container {
+				display: none !important;
+			}
+
+			.d-block.d-lg-none.w-100.text-center {
+				padding: 1rem !important;
+			}
+
+			.d-flex.flex-column.flex-lg-row-fluid.w-lg-50.p-10 {
+				padding: 1rem !important;
+			}
+
+			.text-center.mb-11 {
+				margin-bottom: 1.5rem !important;
+			}
+
+			.d-flex.flex-column.flex-lg-row.flex-column-fluid {
+				min-height: auto;
+			}
+		}
+
+		/* Asegurar que el contenedor aside tome toda la altura */
+		.d-flex.flex-lg-row-fluid.w-lg-50.order-2.order-lg-1 {
+			min-height: 100vh;
+		}
+
+		/* Ajustar el contenedor principal para asegurar altura completa */
+		.d-flex.flex-column.flex-lg-row.flex-column-fluid {
+			min-height: 100vh;
+		}
+	</style>
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+
+<body id="kt_body" class="app-blank app-blank">
+
+
+	<!-- Modal para mostrar mensajes -->
+	<div class="modal fade" id="kt_modal_messages" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered mw-500px">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="fw-bold" id="kt_modal_messages_title">Inicio de Sesión</h2>
+					<div class="btn btn-icon btn-sm btn-active-icon-primary" data-bs-dismiss="modal" aria-label="Close">
+						<i class="ki-duotone ki-cross fs-1">
+							<span class="path1"></span>
+							<span class="path2"></span>
+						</i>
+					</div>
+				</div>
+				<div class="modal-body py-lg-10 px-lg-10">
+					<div class="text-center">
+						<div id="kt_modal_messages_icon" class="mb-5"></div>
+						<div id="kt_modal_messages_text" class="mb-5 fs-3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--begin::Theme mode setup on page load-->
+	<script>var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+	<!--end::Theme mode setup on page load-->
+	<!--begin::Root-->
+	<div class="d-flex flex-column flex-root" id="kt_app_root">
+		<!--begin::Authentication - Sign-in -->
+		<div class="d-flex flex-column flex-lg-row flex-column-fluid">
+			<!-- Versión móvil - Reorganizar estructura -->
+			<div class="d-block d-lg-none w-100 text-center order-1">
+				<!-- Contenedor de logo móvil -->
+				<div class="mobile-company-container" id="mobileCompanyContainer">
+					<div class="mobile-company-image pipsa"></div>
+				</div>
+			</div>
+
+			<!-- Versión desktop - Mantener estructura original -->
+			<div class="d-none d-lg-flex flex-lg-row-fluid w-lg-50 order-2 order-lg-1">
+				<div class="company-container" id="companyContainer">
+					<div class="company-image pipsa"></div>
+				</div>
+			</div>
+
+			<!--begin::Body-->
+			<div class="d-flex flex-column flex-lg-row-fluid w-lg-50 order-3 order-lg-2">
+				<!--begin::Form-->
+				<div class="d-flex flex-center flex-column flex-lg-row-fluid">
+					<!--begin::Wrapper-->
+					<div class="w-lg-500px p-10">
+						<!--begin::Form-->
+						<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form"
+							action="../GSO/Login/Login.php" method="POST">
+							<!--begin::Heading-->
+							<div class="text-center mb-11">
+								<!--begin::Title-->
+								<h1 class="text-gray-900 fw-bolder mb-3">Iniciar Sesión</h1>
+								<!--end::Title-->
+								<!--begin::Subtitle-->
+								<div class="text-gray-500 fw-semibold fs-6">Procesadora Industrial de Plasticos</div>
+								<!--end::Subtitle=-->
+							</div>
+
+							<!--begin::Input group=-->
+							<div class="fv-row mb-8">
+								<!--begin::Email-->
+								<input type="text" placeholder="Usuario" name="user" autocomplete="off"
+									class="form-control bg-transparent" required id="kt_user" />
+								<!--end::Email-->
+							</div>
+							<!--end::Input group=-->
+							<div class="fv-row mb-3">
+								<div class="fv-row mb-3">
+									<!--begin::Password-->
+									<div class="fv-row mb-3">
+										<div class="position-relative">
+											<input type="password" placeholder="Contraseña" name="password"
+												autocomplete="off" class="form-control bg-transparent pe-10" required
+												id="kt_password" />
+
+											<!-- Botón con icono de Keen -->
+											<span
+												class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-2"
+												id="kt_password_visibility">
+												<i class="ki-duotone ki-eye">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<!--end::Input group=-->
+								<!--begin::Remember me-->
+								<div class="fv-row mb-3">
+									<div class="form-check form-check-custom form-check-solid">
+										<input class="form-check-input" type="checkbox" id="kt_remember_me" name="rememberMe" value="true" />
+										<label class="form-check-label" for="kt_remember_me">
+											Recordar usuario y contraseña
+										</label>
+									</div>
+								</div>
+								<!--end::Remember me-->
+								<!--begin::Company and Country Select-->
+								<!-- Compañía fija: Pipsa (PI) -->
+								<input type="hidden" name="company" value="PI" />
+								<input type="hidden" name="companyCode" id="companyCodeInput" />
+								<div class="fv-row mb-3">
+									<select class="form-select form-select-solid" name="country"
+										id="countrySelectorForm" required>
+										<option value="" disabled selected>Cargando países...</option>
+									</select>
+								</div>
+								<!--end::Company and Country Select-->
+								<!--begin::Submit button-->
+								<div class="d-grid mb-10">
+									<button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
+										<!--begin::Indicator label-->
+										<span class="indicator-label">Ingresar</span>
+										<!--end::Indicator label-->
+										<!--begin::Indicator progress-->
+										<span class="indicator-progress">Please wait...
+											<span
+												class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+										<!--end::Indicator progress-->
+									</button>
+								</div>
+								<!--end::Submit button-->
+						</form>
+						<!--end::Form-->
+					</div>
+					<!--end::Wrapper-->
+				</div>
+				<!--end::Form-->
+
+			</div>
+			<!--end::Body-->
+		</div>
+		<!--end::Authentication - Sign-in-->
+	</div>
+	<!--end::Root-->
+
+</body>
+<!--end::Body-->
+
+</html>
+
+
+<!-- Bootstrap Bundle con Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	const form = document.getElementById('kt_sign_in_form');
+	const submitButton = document.getElementById('kt_sign_in_submit');
+	const indicatorLabel = submitButton ? submitButton.querySelector('.indicator-label') : null;
+	const indicatorProgress = submitButton ? submitButton.querySelector('.indicator-progress') : null;
+
+	const countrySelect = document.getElementById('countrySelectorForm');
+	const companyCodeInput = document.getElementById('companyCodeInput');
+
+	const passwordInput = document.getElementById('kt_password');
+	const visibilityToggle = document.getElementById('kt_password_visibility');
+	const userInput = document.getElementById('kt_user');
+	const rememberMeCheckbox = document.getElementById('kt_remember_me');
+
+	// Compañía fija: Nauffar (PP)
+	const FIXED_COMPANY = 'PP';
+	const COMPANY_SUBTITLE = 'Procesadora Industrial de Plasticos';
+
+	let countryList = [];
+
+	initializeTooltip();
+	initializePasswordToggle();
+	initializeSessionStateNotice();
+	loadCredentials();
+	initializeCatalog();
+	initializeFormSubmission();
+
+	/**
+	 * Guardar credenciales: username y password en cookies HttpOnly (backend)
+	 * Solo guardar estado de "remember me" en localStorage
+	 * El backend maneja el guardado de username y password en cookies HttpOnly cuando rememberMe está marcado
+	 */
+	function saveCredentials() {
+		if (!rememberMeCheckbox) {
+			return;
+		}
+
+		if (rememberMeCheckbox.checked) {
+			// Solo guardar el estado de "remember me" en localStorage
+			// Las credenciales (username y password) se guardan en cookies HttpOnly por el backend
+			localStorage.setItem('rememberMe', 'true');
+		} else {
+			// Eliminar estado de "remember me" si se desmarca
+			// Las cookies se eliminan automáticamente por el backend
+			localStorage.removeItem('rememberMe');
+		}
+	}
+
+	/**
+	 * Cargar credenciales: username y password desde cookies HttpOnly
+	 * Solo el estado de "remember me" se carga desde localStorage
+	 */
+	async function loadCredentials() {
+		if (!userInput || !passwordInput || !rememberMeCheckbox) {
+			return;
+		}
+
+		// Verificar localStorage para el estado de rememberMe
+		const rememberMe = localStorage.getItem('rememberMe') === 'true';
+		
+		if (!rememberMe) {
+			rememberMeCheckbox.checked = false;
+			return;
+		}
+
+		// Si rememberMe está activo, cargar desde cookies HttpOnly
+		rememberMeCheckbox.checked = true;
+
+		try {
+			// Obtener username y password desde cookies HttpOnly
+			const endpointUrl = 'Login/get_remembered_username.php';
+			
+			const response = await fetch(endpointUrl, {
+				method: 'GET',
+				headers: {
+					'Accept': 'application/json'
+				},
+				credentials: 'include' // Importante: incluir cookies HttpOnly
+			});
+
+			if (!response.ok) {
+				return;
+			}
+
+			const data = await response.json();
+
+			if (data.success && data.hasRememberMe) {
+				// Cargar username desde cookie HttpOnly
+				if (data.username) {
+					userInput.value = data.username;
+				}
+				
+				// Cargar password desde cookie HttpOnly
+				if (data.password) {
+					passwordInput.value = data.password;
+				}
+			} else {
+				rememberMeCheckbox.checked = false;
+			}
+		} catch (error) {
+			rememberMeCheckbox.checked = false;
+		}
+	}
+
+	function saveLastCountry() {
+		if (!countrySelect || !countrySelect.value) {
+			return;
+		}
+
+		localStorage.setItem('lastSelectedCountry', countrySelect.value);
+	}
+
+	function loadLastCountry() {
+		if (!countrySelect || !countryList.length) {
+			return;
+		}
+
+		const lastCountry = localStorage.getItem('lastSelectedCountry');
+		if (!lastCountry) {
+			return;
+		}
+
+		for (let i = 0; i < countrySelect.options.length; i++) {
+			const option = countrySelect.options[i];
+			if (option.value === lastCountry) {
+				countrySelect.value = lastCountry;
+				applySelectedCountry();
+				return;
+			}
+		}
+	}
+
+	function initializeTooltip() {
+		if (!visibilityToggle) {
+			return;
+		}
+
+		new bootstrap.Tooltip(visibilityToggle, {
+			title: 'Mostrar contraseña',
+			placement: 'top'
+		});
+	}
+
+	function initializePasswordToggle() {
+		if (!passwordInput || !visibilityToggle) {
+			return;
+		}
+
+		visibilityToggle.setAttribute('data-bs-title', 'Mostrar contraseña');
+
+		visibilityToggle.addEventListener('click', function () {
+			const isHidden = passwordInput.type === 'password';
+			passwordInput.type = isHidden ? 'text' : 'password';
+
+			const icon = visibilityToggle.querySelector('i');
+			if (icon) {
+				icon.classList.remove(isHidden ? 'ki-eye' : 'ki-eye-slash');
+				icon.classList.add(isHidden ? 'ki-eye-slash' : 'ki-eye');
+			}
+
+			const tooltipText = isHidden ? 'Ocultar contraseña' : 'Mostrar contraseña';
+			visibilityToggle.setAttribute('data-bs-title', tooltipText);
+
+			const tooltip = bootstrap.Tooltip.getInstance(visibilityToggle);
+			if (tooltip) {
+				tooltip.setContent({ '.tooltip-inner': tooltipText });
+			}
+		});
+	}
+
+	function initializeSessionStateNotice() {
+		const urlParams = new URLSearchParams(window.location.search);
+		if (urlParams.get('expirado') === '1') {
+			showModalMessage('Tu sesión ha expirado por inactividad. Por favor, inicia sesión nuevamente.', 'error');
+		}
+	}
+
+	function initializeFormSubmission() {
+		if (!form) {
+			return;
+		}
+
+		form.addEventListener('submit', function (event) {
+			event.preventDefault();
+
+			if (indicatorLabel && indicatorProgress) {
+				indicatorLabel.classList.add('d-none');
+				indicatorProgress.classList.remove('d-none');
+			}
+
+			// Crear FormData e incluir explícitamente rememberMe
+			const formData = new FormData(form);
+			if (rememberMeCheckbox && rememberMeCheckbox.checked) {
+				formData.set('rememberMe', 'true');
+			} else {
+				formData.delete('rememberMe');
+			}
+
+			fetch(form.action, {
+				method: 'POST',
+				body: formData,
+				headers: {
+					Accept: 'application/json'
+				},
+				credentials: 'include' // Importante: incluir cookies HttpOnly
+			})
+				.then(response => response.json())
+				.then(data => {
+					showModalMessage(data.message, data.icon);
+
+					if (data.success && data.redirect) {
+						saveCredentials();
+						saveLastCountry();
+						setTimeout(function () {
+							window.location.href = data.redirect;
+						}, 2000);
+					}
+				})
+				.catch(function () {
+					showModalMessage('Error en la conexión con el servidor', 'error');
+				})
+				.finally(function () {
+					if (indicatorLabel && indicatorProgress) {
+						indicatorLabel.classList.remove('d-none');
+						indicatorProgress.classList.add('d-none');
+					}
+				});
+		});
+	}
+
+	function initializeCatalog() {
+		if (!countrySelect || !companyCodeInput) {
+			return;
+		}
+
+		setSelectorsDisabled(true);
+		loadCatalog()
+			.then(records => {
+				buildCatalog(records);
+				populateCountryOptions();
+				attachCatalogListeners();
+				setSelectorsDisabled(false);
+				loadLastCountry();
+			})
+			.catch(error => {
+				const message = error instanceof Error ? error.message : 'No fue posible cargar los países.';
+				presentCatalogError(message);
+				showModalMessage(message, 'error');
+			});
+	}
+
+	function loadCatalog() {
+		return fetch('http://192.168.10.81:8022/api/Country/GetByCompany', {
+			method: 'GET',
+			headers: {
+				Accept: 'application/json'
+			}
+		})
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('No se pudo obtener el catálogo de países.');
+				}
+				return response.json();
+			})
+			.then(payload => {
+				if (!payload || payload.statusResult === false) {
+					throw new Error(payload?.messageResult || 'No se obtuvo una respuesta válida del servidor.');
+				}
+
+				let data = payload.dataResult || [];
+				if (!Array.isArray(data)) {
+					data = data ? [data] : [];
+				}
+
+				if (!data.length) {
+					throw new Error('No hay países configurados para iniciar sesión.');
+				}
+
+				return data.map(normalizeRecord);
+			});
+	}
+
+	function normalizeRecord(item) {
+		const countryId = (item.countryId || '').trim().toUpperCase();
+
+		return {
+			countryId,
+			countryName: formatCountryName(item.name || countryId),
+			sapCode: item.sapCode || ''
+		};
+	}
+
+	function formatCountryName(value) {
+		return value.replace(/\w\S*/g, function (text) {
+			return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+		});
+	}
+
+	function buildCatalog(records) {
+		// Solo guardar países de Pipsa (PI)
+		countryList = records
+			.filter(record => record.countryId) // Solo países válidos
+			.sort((a, b) => a.countryName.localeCompare(b.countryName, 'es'));
+	}
+
+	function populateCountryOptions() {
+		if (!countryList.length) {
+			countrySelect.innerHTML = '<option value="" disabled selected>No hay países disponibles</option>';
+			countrySelect.disabled = true;
+			companyCodeInput.value = '';
+			return;
+		}
+
+		countrySelect.disabled = false;
+		countrySelect.innerHTML = '';
+
+		countryList.forEach(country => {
+			const option = document.createElement('option');
+			option.value = country.countryId;
+			option.textContent = country.countryName;
+			option.dataset.sapCode = country.sapCode;
+			countrySelect.appendChild(option);
+		});
+
+		// Seleccionar el primer país por defecto
+		if (countryList.length > 0) {
+			countrySelect.value = countryList[0].countryId;
+			applySelectedCountry();
+		}
+	}
+
+	function attachCatalogListeners() {
+		countrySelect.addEventListener('change', function () {
+			applySelectedCountry();
+		});
+	}
+
+	function applySelectedCountry() {
+		const selected = countrySelect.options[countrySelect.selectedIndex];
+		if (!selected) {
+			companyCodeInput.value = '';
+			return;
+		}
+
+		companyCodeInput.value = selected.dataset.sapCode || '';
+	}
+
+	function buildModal() {
+		const modalElement = document.getElementById('kt_modal_messages');
+		return modalElement ? new bootstrap.Modal(modalElement) : null;
+	}
+
+	function showModalMessage(message, iconType) {
+		const modal = buildModal();
+		if (!modal) {
+			return;
+		}
+
+		const iconElement = document.getElementById('kt_modal_messages_icon');
+		const textElement = document.getElementById('kt_modal_messages_text');
+
+		if (iconElement) {
+			iconElement.innerHTML = iconType === 'success' ? renderSuccessIcon() : renderErrorIcon();
+		}
+
+		if (textElement) {
+			textElement.textContent = message;
+		}
+
+		modal.show();
+	}
+
+	function renderSuccessIcon() {
+		return `
+			<span class="svg-icon svg-icon-5tx svg-icon-success mb-5">
+				<svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.3" d="M20.5543 4.37824L12.1798 2.02473C12.0626 1.99176 11.9376 1.99176 11.8203 2.02473L3.44572 4.37824C3.18118 4.45258 3 4.6807 3 4.93945V13.569C3 14.6914 3.48509 15.8404 4.4417 16.984C5.17231 17.8575 6.18314 18.7345 7.446 19.5909C9.56752 21.0295 11.6566 21.912 11.7445 21.9488C11.8258 21.9829 11.9129 22 12.0001 22C12.0872 22 12.1744 21.983 12.2557 21.9488C12.3435 21.912 14.4326 21.0295 16.5541 19.5909C17.8169 18.7345 18.8277 17.8575 19.5584 16.984C20.515 15.8404 21 14.6914 21 13.569V4.93945C21 4.6807 20.8189 4.45258 20.5543 4.37824Z" fill="currentColor"/>
+					<path d="M10.5606 11.3042L9.57283 10.3018C9.28174 10.0065 8.80522 10.0065 8.51412 10.3018C8.22897 10.5912 8.22897 11.0559 8.51412 11.3452L10.4182 13.2773C10.8099 13.6747 11.451 13.6747 11.8427 13.2773L15.4859 9.58051C15.771 9.29117 15.771 8.82648 15.4859 8.53714C15.1948 8.24176 14.7183 8.24176 14.4272 8.53714L11.7002 11.3042C11.3869 11.6221 10.874 11.6221 10.5606 11.3042Z" fill="currentColor"/>
+				</svg>
+			</span>`;
+	}
+
+	function renderErrorIcon() {
+		return `
+			<span class="svg-icon svg-icon-5tx svg-icon-danger mb-5">
+				<svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.3" d="M20.5543 4.37824L12.1798 2.02473C12.0626 1.99176 11.9376 1.99176 11.8203 2.02473L3.44572 4.37824C3.18118 4.45258 3 4.6807 3 4.93945V13.569C3 14.6914 3.48509 15.8404 4.4417 16.984C5.17231 17.8575 6.18314 18.7345 7.446 19.5909C9.56752 21.0295 11.6566 21.912 11.7445 21.9488C11.8258 21.9829 11.9129 22 12.0001 22C12.0872 22 12.1744 21.983 12.2557 21.9488C12.3435 21.912 14.4326 21.0295 16.5541 19.5909C17.8169 18.7345 18.8277 17.8575 19.5584 16.984C20.515 15.8404 21 14.6914 21 13.569V4.93945C21 4.6807 20.8189 4.45258 20.5543 4.37824Z" fill="currentColor"/>
+					<path d="M12.0001 11.4344C11.3583 11.4344 10.8301 10.9072 10.8301 10.2654C10.8301 9.62358 11.3583 9.0964 12.0001 9.0964C12.6419 9.0964 13.1701 9.62358 13.1701 10.2654C13.1701 10.9072 12.6419 11.4344 12.0001 11.4344ZM10.8301 13.9344C10.8301 13.2926 11.3583 12.7654 12.0001 12.7654C12.6419 12.7654 13.1701 13.2926 13.1701 13.9344V16.7654C13.1701 17.4072 12.6419 17.9344 12.0001 17.9344C11.3583 17.9344 10.8301 17.4072 10.8301 16.7654V13.9344Z" fill="currentColor"/>
+				</svg>
+			</span>`;
+	}
+
+	function presentCatalogError(message) {
+		countrySelect.innerHTML = `<option value="" disabled selected>${escapeHtml(message)}</option>`;
+		countrySelect.disabled = true;
+		companyCodeInput.value = '';
+	}
+
+	function setSelectorsDisabled(isDisabled) {
+		if (countrySelect) {
+			countrySelect.disabled = isDisabled;
+		}
+	}
+
+	function escapeHtml(value) {
+		return (value || '').replace(/[&<>"']/g, function (match) {
+			switch (match) {
+				case '&':
+					return '&amp;';
+				case '<':
+					return '&lt;';
+				case '>':
+					return '&gt;';
+				case '"':
+					return '&quot;';
+				case "'":
+					return '&#39;';
+				default:
+					return match;
+			}
+		});
+	}
+});
+</script>

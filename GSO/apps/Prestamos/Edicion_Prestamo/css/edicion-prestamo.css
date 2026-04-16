@@ -1,0 +1,439 @@
+/**
+ * Estilos específicos para el módulo Edición de Préstamo
+ * Versión: 1.0.0
+ * 
+ * Este archivo contiene todos los estilos específicos del módulo
+ */
+
+/* ========================================
+   ESTILOS DEL GRID DE PAGOS
+   ======================================== */
+
+/* Contenedor del grid de pagos */
+#pagosGrid {
+    height: 400px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ========================================
+   ESTILOS DE LA CABECERA DEL PRÉSTAMO
+   ======================================== */
+
+/* Header principal */
+.prestamo-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.prestamo-header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.prestamo-header .prestamo-info {
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+
+/* ========================================
+   ESTILOS DE LAS SECCIONES DE INFORMACIÓN
+   ======================================== */
+
+/* Contenedor de secciones */
+.info-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Tarjetas de información */
+.info-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+}
+
+.info-card .card-title {
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+}
+
+/* Campos de formulario */
+.info-card .form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.info-card .form-control,
+.info-card .form-select {
+    border-radius: 6px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.info-card .form-control:focus,
+.info-card .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.info-card .form-control:read-only {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+/* Input groups */
+.info-card .input-group-text {
+    background-color: #667eea;
+    border-color: #667eea;
+    color: white;
+    font-weight: 600;
+}
+
+/* ========================================
+   ESTILOS DE LA SECCIÓN DE DETALLE DE PAGOS
+   ======================================== */
+
+.pagos-section {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    margin-bottom: 2rem;
+}
+
+.pagos-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+}
+
+.pagos-section .section-title {
+    color: #495057;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ========================================
+   ESTILOS DE LOS BOTONES DE ACCIÓN
+   ======================================== */
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.action-buttons .btn {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.action-buttons .btn-secondary {
+    background: #6c757d;
+    border: none;
+    color: white;
+}
+
+.action-buttons .btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 117, 125, 0.4);
+}
+
+.action-buttons .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.action-buttons .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* ========================================
+   ESTILOS RESPONSIVOS
+   ======================================== */
+
+@media (max-width: 768px) {
+    .prestamo-header {
+        padding: 1.5rem;
+    }
+    
+    .prestamo-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .info-sections {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .info-card {
+        padding: 1rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .action-buttons .btn {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .prestamo-header {
+        padding: 1rem;
+    }
+    
+    .prestamo-header h1 {
+        font-size: 1.25rem;
+    }
+    
+    .info-card {
+        padding: 0.75rem;
+    }
+    
+    .pagos-section {
+        padding: 1rem;
+    }
+}
+
+/* ========================================
+   ESTILOS DE ANIMACIONES
+   ======================================== */
+
+/* Animación de entrada para las tarjetas */
+.info-card {
+    animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effects */
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+/* ========================================
+   ESTILOS DE ESTADOS
+   ======================================== */
+
+/* Campos requeridos */
+.info-card .form-control:required,
+.info-card .form-select:required {
+    border-left: 3px solid #dc3545;
+}
+
+.info-card .form-control:required:valid,
+.info-card .form-select:required:valid {
+    border-left-color: #28a745;
+}
+
+/* Campos de solo lectura */
+.info-card .form-control[readonly] {
+    background-color: #e9ecef;
+    color: #495057;
+    cursor: not-allowed;
+}
+
+/* ========================================
+   ESTILOS DE VALIDACIÓN
+   ======================================== */
+
+.info-card .form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.info-card .form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* ========================================
+   ESTILOS DE ACCESIBILIDAD
+   ======================================== */
+
+/* Focus visible para navegación por teclado */
+.info-card .form-control:focus,
+.info-card .form-select:focus,
+.action-buttons .btn:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Alto contraste para modo oscuro */
+@media (prefers-color-scheme: dark) {
+    .info-card,
+    .pagos-section {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        border-color: #404040;
+    }
+    
+    .info-card .form-control,
+    .info-card .form-select {
+        background-color: #2d2d2d;
+        border-color: #404040;
+        color: #ffffff;
+    }
+    
+    .info-card .form-control:read-only {
+        background-color: #404040;
+        color: #cccccc;
+    }
+    
+    .prestamo-header {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    }
+}
+
+/* ========================================
+   ESTILOS ESPECÍFICOS PARA BADGES
+   ======================================== */
+
+/* Badges de estado de pago */
+.payment-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.payment-status.pagado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.payment-status.vencido {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.payment-status.pendiente {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Badges de tipo de cuota */
+.cuota-type {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cuota-type.fija {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.cuota-type.decreciente {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+.cuota-type.creciente {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* ========================================
+   ESTILOS PARA BADGES DE SYNCFUSION
+   ======================================== */
+
+/* Badges de estado de pago para Syncfusion */
+.e-status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.e-status-pagado {
+    background-color: #e8f5e8;
+    color: #1e7e34;
+    border: 1px solid #c3e6cb;
+}
+
+.e-status-pendiente {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.e-status-vencido {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.e-status-moroso {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Estilos para badges de tipo de pago */
+.e-tipo-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.e-tipo-gracia {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+.e-tipo-normal {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+    border: 1px solid #e1bee7;
+}
