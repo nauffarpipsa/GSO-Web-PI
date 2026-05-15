@@ -28,9 +28,9 @@ if (!function_exists('api_config')) {
     function api_config() {
         static $config = null;
         if ($config === null) {
-            $config = [
+            $config = [ 
                 // --- Autenticación y usuarios (puerto 8021)
-                'auth'              => 'http://192.168.10.81:8022/api',
+                'auth'              => 'http://192.168.10.81:8021/api/',
                 'pagos_sap'         => 'http://192.168.10.81:8022/api/',   // Facturas, pagos, Invoice, Payment
 
                 // --- Préstamos SAP (puerto 8031)
@@ -62,6 +62,9 @@ if (!function_exists('api_config')) {
 
                 // --- OData / Corporativo (puerto 3002)
                 'corporativo_odata' => 'http://192.168.10.81:3002/Corporativo',
+
+                // --- Tareas / Automatización (puerto 8021)
+                'tasks'             => 'http://192.168.10.81:8021/api',   // TbTask, StatementTask, WhatsAppTask, etc.
             ];
         }
         return $config;
@@ -79,6 +82,7 @@ defined('API_AMORTIZACION')    or define('API_AMORTIZACION',   api_config()['amo
 defined('API_PROCESO_MANUAL')  or define('API_PROCESO_MANUAL', api_config()['proceso_manual']);
 defined('API_REPORTES')        or define('API_REPORTES',       api_config()['reportes']);
 defined('API_DOCUMENTOS')      or define('API_DOCUMENTOS',     api_config()['documentos']);
+defined('API_TASKS')           or define('API_TASKS',          api_config()['tasks']);
 defined('API_WEBSOCKET')       or define('API_WEBSOCKET',      api_config()['websocket']);
 defined('API_CORPORATIVO_ODATA') or define('API_CORPORATIVO_ODATA', api_config()['corporativo_odata']);
 
