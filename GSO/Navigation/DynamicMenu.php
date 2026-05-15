@@ -81,7 +81,8 @@ $roleConfig = [
         'accessMap' => [
             'Reportes' => [
                 'Estados de Cuenta' => 'apps/Creditos/Reportes/report-selector.php?accessName=Estados de Cuenta'
-            ]
+            ],
+            'Tareas' => 'apps/Tareas/Maestro_Tareas/Tareas.php',
         ]   
     ],
     'Configuraciones' => [
@@ -96,6 +97,7 @@ $roleConfig = [
             'Roles' => 'apps/configuraciones/Roles/Roles.php',
             'Sesiones Activas' => 'admin/sesiones-activas.php',
             'Anuncios' => 'admin/anuncios.php',
+            
         ]
     ]
 ];

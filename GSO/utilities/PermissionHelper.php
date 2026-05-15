@@ -405,6 +405,15 @@ class PermissionHelper
     }
 
     /**
+     * Verificar si el usuario puede Ejecutar Tareas / Procesos.
+     */
+    public static function canExecute($accessName)
+    {
+        return self::hasActionByName($accessName, 'Ejecutar');
+    }
+    
+
+    /**
      * Verificar si el usuario puede Cambiar Fechas.
      */
     public static function canChangeDates($accessName)
@@ -518,6 +527,11 @@ function canExportFiles($accessName)
 function canChangeStatus($accessName)
 {
     return PermissionHelper::canChangeStatus($accessName);
+}
+
+function canExecute($accessName)
+{
+    return PermissionHelper::canExecute($accessName);
 }
 
 function canChangeDates($accessName)
